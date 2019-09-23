@@ -25,10 +25,10 @@ class Image
           ones.each do |found_i, found_col|
 
             if i == found_i && col == found_col
-              @image[i -1][col] = 1 unless i == 0 #up
-              @image[i +1][col] = 1 unless i >= 3 #down
-              @image[i][col -1] = 1 unless col == 0 #left
-              @image[i][col +1] = 1 unless col >= 3 #right
+              @image[i -1][col] = 1 unless i == 0 
+              @image[i +1][col] = 1 unless i >= 3 
+              @image[i][col -1] = 1 unless col == 0 
+              @image[i][col +1] = 1 unless col >= 3 
             end
           end
         end
